@@ -89,7 +89,7 @@ Below is a detailed hyperparameter table for full NovelD. This will work for all
 - `num_envs = 32`, the same as the NovelD paper and previous projects.
 - `update_proportion = 0.25`, it just work (I don't need to tune this param)
 - `int_adv_coef, ext_adv_coef: 0.5 and 1`, as in previous projects.
-- `gamma, gamma_int: 0.99 and 0.997`, like previous projects.
+- `gamma, gamma_int: 0.99`, like previous projects.
 - `entropy_coef = 0.01`: it just work (I don't need to tune this param)
 - `learn_step = 512, batchsize = 256, lambda = 0.95, epoch = 10, lr = 7e-5, target_kl = 0.05, clip_param = 0.2, max_grad_norm = 0.5, norm_adv = false, V_coef = 0.5`, as in previous projects.
 - `norm_rnd_output`: True, I will normalize rnd output by divide by running std because it will make intrinsic reward more stable. Some of my experiments suggest that non-normalization leads to poor or inefficient performance (insufficient experimental data to draw conclusions).
